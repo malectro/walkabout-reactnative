@@ -17,6 +17,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Button,
 } from 'react-native';
 import Geolocation, {
   GeolocationOptions,
@@ -26,6 +27,7 @@ import Geolocation, {
 //import regionMonitor from 'react-native-region-monitor';
 import {point as makePoint} from '@turf/helpers';
 import distance from '@turf/distance';
+import Sound from 'react-native-sound';
 
 import NativeRegionMonitor, {LatLong} from './NativeRegionMonitor';
 import {useResource, ResourceState} from './useResource';
@@ -149,6 +151,16 @@ const App = () => {
     )
     : [];
 
+    const playSound = () => {
+      const sound = new Sound('./ms20.aif', Sound.MAIN_BUNDLE, error => {
+        if (error) {
+          console.warn(error);
+        } else {
+        sound.play();
+        }
+      });
+    };
+
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
@@ -159,6 +171,7 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Button title="Play sound" onPress={playSound} />
           <TextSection title="Last render">
             {new Date().toLocaleTimeString()}
           </TextSection>
@@ -233,8 +246,6 @@ function BodyText({children}: {children: string}) {
     </Text>
   );
 }
-
-function PositionInfo({position}) {}
 
 const styles = StyleSheet.create({
   sectionContainer: {

@@ -13,6 +13,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		27E92B4E265D7E8300B612D2 /* RCTRegionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E92B4D265D7E8300B612D2 /* RCTRegionMonitor.m */; };
 		27E92B4F265D7E8300B612D2 /* RCTRegionMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E92B4D265D7E8300B612D2 /* RCTRegionMonitor.m */; };
+		27E92B52265EEE9D00B612D2 /* RCTSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E92B51265EEE9D00B612D2 /* RCTSound.m */; };
+		27E92B53265EEE9D00B612D2 /* RCTSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E92B51265EEE9D00B612D2 /* RCTSound.m */; };
+		27E92B55265EF8E000B612D2 /* ms20.aif in Resources */ = {isa = PBXBuildFile; fileRef = 27E92B54265EF8E000B612D2 /* ms20.aif */; };
+		27E92B56265EF8E000B612D2 /* ms20.aif in Resources */ = {isa = PBXBuildFile; fileRef = 27E92B54265EF8E000B612D2 /* ms20.aif */; };
 		5C45734E62819D594A56E430 /* libPods-Walkabout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D677CF072A2A76FFA135F1 /* libPods-Walkabout.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		850B3C1970FB555AC6E8E76A /* libPods-Walkabout-WalkaboutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF46E0E421D59E3DAF280D2 /* libPods-Walkabout-WalkaboutTests.a */; };
@@ -43,6 +47,9 @@
 		27DF190AD8A7231F9B173C23 /* Pods-Walkabout-WalkaboutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkabout-WalkaboutTests.debug.xcconfig"; path = "Target Support Files/Pods-Walkabout-WalkaboutTests/Pods-Walkabout-WalkaboutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		27E92B4C265D7D0F00B612D2 /* RCTRegionMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTRegionMonitor.h; sourceTree = "<group>"; };
 		27E92B4D265D7E8300B612D2 /* RCTRegionMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTRegionMonitor.m; sourceTree = "<group>"; };
+		27E92B50265EEE7900B612D2 /* RCTSound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTSound.h; sourceTree = "<group>"; };
+		27E92B51265EEE9D00B612D2 /* RCTSound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTSound.m; sourceTree = "<group>"; };
+		27E92B54265EF8E000B612D2 /* ms20.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = ms20.aif; path = ../ms20.aif; sourceTree = "<group>"; };
 		49D677CF072A2A76FFA135F1 /* libPods-Walkabout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Walkabout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Walkabout/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA67DDCB421F7B6240093F4D /* Pods-Walkabout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkabout.debug.xcconfig"; path = "Target Support Files/Pods-Walkabout/Pods-Walkabout.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +105,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				27E92B4C265D7D0F00B612D2 /* RCTRegionMonitor.h */,
 				27E92B4D265D7E8300B612D2 /* RCTRegionMonitor.m */,
+				27E92B50265EEE7900B612D2 /* RCTSound.h */,
+				27E92B51265EEE9D00B612D2 /* RCTSound.m */,
 			);
 			name = Walkabout;
 			sourceTree = "<group>";
@@ -133,6 +142,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				27E92B54265EF8E000B612D2 /* ms20.aif */,
 				13B07FAE1A68108700A75B9A /* Walkabout */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WalkaboutTests */,
@@ -241,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E92B56265EF8E000B612D2 /* ms20.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				27E92B55265EF8E000B612D2 /* ms20.aif in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +422,7 @@
 			files = (
 				27E92B4F265D7E8300B612D2 /* RCTRegionMonitor.m in Sources */,
 				00E356F31AD99517003FC87E /* WalkaboutTests.m in Sources */,
+				27E92B53265EEE9D00B612D2 /* RCTSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +433,7 @@
 				27E92B4E265D7E8300B612D2 /* RCTRegionMonitor.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				27E92B52265EEE9D00B612D2 /* RCTSound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
